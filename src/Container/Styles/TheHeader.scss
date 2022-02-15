@@ -1,0 +1,171 @@
+@import "../../Config/ColorsTheme.scss";
+
+.NavBar {
+  background: $colorNone;
+  padding: 0;
+  font-weight: 700 !important;
+  width: 100vw;
+  position: absolute;
+  top: 40px;
+  .nav-item {
+    padding: 10px;
+    .nav-link {
+      color: $ColorLight1;
+      text-transform: uppercase;
+    }
+  }
+  .nav-item:hover {
+    font-weight: 700;
+  }
+  .navbar-brand {
+    width: 25%;
+  }
+  .nav-link {
+    padding: 0 !important;
+  }
+}
+.LinkTo {
+  color: $ColorLight1;
+  text-decoration: none;
+}
+.topHeader {
+  background: $ColorLight2 !important;
+  font-weight: 700 !important;
+  color: $ColorLight1;
+  position: relative;
+  width: 100vw !important;
+  height: 55px;
+  .langue {
+    padding: 15px;
+  }
+  .telephone {
+    padding: 15px;
+  }
+  .social {
+    padding: 15px;
+    .fa {
+      border: 1px solid $ColorLight1;
+      border-radius: 25px;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      margin-right: 15px;
+      font-size: 15px;
+      padding: 2%;
+    }
+  }
+
+  .login {
+    padding: 15px;
+  }
+  .dropdown {
+    margin: -2%;
+    font-weight: 700 !important;
+
+    .DropDownLangue {
+      color: $ColorLight1;
+     
+    }
+  }
+  span {
+    font-weight: 700 !important;
+  }
+}
+ .Lang {
+            cursor: pointer;
+      }
+.contenue {
+  margin-top: 5%;
+}
+
+.Language {
+  img {
+    max-width: 25px;
+    margin-left: 9px;
+  }
+}
+
+.dropbtn {
+  color: $ColorBase2;
+  border: none;
+  background: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100px;
+  padding: 12%;
+}
+
+.dropdown-content a:hover {
+  background-color: $ColorLight1;
+  color: $ColorBase2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  padding: 2%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .topHeader {
+    top: 0px !important;
+  }
+  .nav-link {
+    color: $ColorLight1;
+    text-transform: lowercase !important;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .topHeader {
+    top: 0px !important;
+  }
+  .NavBar {
+    position: relative;
+  }
+
+  .NavBar,
+  .topHeader {
+    background: $ColorLight2 !important;
+    height: 100%;
+    top: 0;
+    border-bottom: 1px solid $ColorLight1Trans;
+  }
+  .topHeader {
+    .langue,
+    .telephone,
+    .social,
+    .login {
+      padding: 5px;
+    }
+  }
+  .col-xs-2 {
+    width: 25% !important;
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    border: 1px solid $ColorLight1Trans !important;
+    .fa {
+      color: $ColorLight1;
+    }
+  }
+  .fa {
+    padding: 1% !important;
+  }
+}
+@media only screen and (max-width: 995px) {
+  .col-xs-2 {
+    width: 50% !important;
+    text-align: center;
+  }
+}
